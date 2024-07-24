@@ -173,14 +173,19 @@ sup {
     margin-bottom: 10px;
 }
 
-#sources { 
+#sources {
+    margin: 0 auto;
+    width: 900px;
     margin-bottom: 40px;
 }
 
 #sources * {
     line-height: 12px;
     font-size: 10px;
-    margin-left: 15%;
+}
+
+#explanation {
+    padding-top: 40px;
 }
 
 #explanationHeading {
@@ -194,10 +199,24 @@ sup {
     margin-bottom: 40px;
 }
 
+#explanationHeading,
 #explanationHeading2,
+#explanationHeading3 {
+    padding-top: 10px;
+}
+
+#explanationHeading3,
 #comparison tr th,
 #comparison tr td {
     color: #8abcd7;
+}
+
+#explanationSubHeading {
+    margin: 0 auto;
+    width: 900px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 #comparison {
