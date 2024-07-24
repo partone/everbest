@@ -393,12 +393,17 @@ tr:nth-child(even) {
 
 #clincherImage {
     width: 50%;
-    height: 500px;
+    height: 50vw;
+    overflow:hidden;
     z-index: -1;
 }
 
 #clincherImage img {
     width: 100%;
+}
+
+#clincher {
+    height: 50vw;
 }
 
 #clincherContent {
@@ -532,9 +537,25 @@ footer {
         width: 85%;
         padding-right: 15%;
     }
+
+    #ourGreatCEOContent {
+        margin-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #ourGreatCEOContent .heading {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    #ourGreatCEOQuote {
+        font-size: 16px;
+    }
+ 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .head, .headImg {
         height: 100px;
         width: 100px;
@@ -577,6 +598,34 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
+    }
+
+    #clincher {
+        width: 100%;
+        height: auto;
+    }
+
+    #clincherImage {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+
+    #clincherImage img {
+        background-color: black;
+        opacity: 0.4;
+    }
+
+    #clincherContent {
+        width: 100%;
+    }
+
+    #ourGreatCEOContent {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
