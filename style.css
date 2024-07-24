@@ -95,6 +95,7 @@ sup {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 #logo {
@@ -116,6 +117,7 @@ sup {
 
 #landingLeft {
     width: 40%;
+    z-index: 1;
 }
 
 #landingRight {
@@ -156,12 +158,14 @@ sup {
 
 #canisterContainer {
     height: 600px;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    margin-top: 200px;
 }
 
 #canister {
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 /* Explanation */
@@ -175,7 +179,7 @@ sup {
 
 #sources {
     margin: 0 auto;
-    width: 900px;
+    width: 80%;
     margin-bottom: 40px;
 }
 
@@ -213,7 +217,7 @@ sup {
 
 #explanationSubHeading {
     margin: 0 auto;
-    width: 900px;
+    width: 80%;
     margin-bottom: 20px;
     margin-top: 10px;
     text-align: center;
@@ -244,13 +248,15 @@ tr:nth-child(even) {
     width: 100%;
     margin-top: 40px;
     margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #iconCentredContainer {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
     width: fit-content;
 }
 
@@ -258,6 +264,12 @@ tr:nth-child(even) {
     width: 120px;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.iconPairPair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .icon {
@@ -471,11 +483,13 @@ tr:nth-child(even) {
     font-size: 24px;
     line-height: 40px;
     padding-left: 20px;
+    padding-right: 20px;
     margin-top: 20px;
 }
 
 .secondaryDescription {
     padding-left: 40px;
+    padding-right: 40px;
     line-height: 20px;
 }
 
@@ -505,4 +519,83 @@ tr:nth-child(even) {
 
 footer {
     margin: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #landingRight {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #landingLeft {
+        width: 85%;
+        padding-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .head, .headImg {
+        height: 100px;
+        width: 100px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #landingRight {
+        display: none;
+    }
+
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+    
+    .iconPairPair {
+        flex-wrap: wrap;
+    }
+
+    .iconPairPair > :first-child {
+        padding-bottom: 40px;
+    }
+
+    .iconPair {
+        width: 150px;
+    }
+
+    #comparisonContainer * {
+        font-size: 14px;
+    }
+
+    #comparison th, td {
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section, .sectionLeftPadOnly {
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 92%;
+    }
+
+    .heading {
+        font-size: 34px;
+    }
+
+    #landing {
+        height: 770px;
+    }
+
+    #offeringContent {
+        width: 100%;
+    }
 }
