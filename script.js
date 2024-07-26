@@ -34,4 +34,8 @@ $(document).ready(function () {
         $("#stepByStep").slideUp();
         $("#contact").slideDown();
     });
+
+    $("#feel").click(function () {
+        $("#besucherzaehler2").slideDown();
+    });
 });
