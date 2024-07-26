@@ -9,9 +9,11 @@ Light grey: #888888
     font-style: normal;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    min-width: fit-content;
 }
 
 a {
@@ -561,6 +563,17 @@ footer {
         width: 100px;
     }
 
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    #clincher {
+        width: 100%;
+        padding: 0;
+    }
+
     .name {
         font-size: 14px;
     }
@@ -569,12 +582,6 @@ footer {
 @media only screen and (max-width: 800px) {
     #landingRight {
         display: none;
-    }
-
-    .section {
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
     }
     
     .iconPairPair {
@@ -590,7 +597,7 @@ footer {
     }
 
     #comparisonContainer * {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #comparison th, td {
@@ -603,11 +610,12 @@ footer {
     #clincher {
         width: 100%;
         height: auto;
+        position: relative;
     }
 
     #clincherImage {
         position: absolute;
-        height: 100%;
+        height: inherit;
         width: 100%;
         background-color: black;
     }
@@ -626,6 +634,14 @@ footer {
         margin-bottom: 20px;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .heading {
+        font-size: 48px;
+    }
+
+    #ourGreatCEOQuote {
+        font-size: 18px;
     }
 }
 
@@ -646,5 +662,28 @@ footer {
 
     #offeringContent {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #landingHeading {
+        font-size: 85px;
+        padding-top: 110px;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    
+    #landingLeft {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #landing {
+        height: 700px;
     }
 }
