@@ -73,10 +73,6 @@ sup {
     padding-right: 15%;
 }
 
-#explanation {
-    display: none !important;
-}
-
 .sectionLeftPadOnly {
     padding-left: 15%;
 }
@@ -656,6 +652,26 @@ footer {
     #ourGreatCEOQuote {
         font-size: 18px;
     }
+
+    #explanation {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    #explanation > div {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #comparisonContainer {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #explanationSubHeading {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -674,6 +690,21 @@ footer {
     }
 
     #offeringContent {
+        width: 100%;
+    }
+
+    #comparison th, td {
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    #comparisonContainer * {
+        font-size: 16px;
+    }
+
+    #sources {
         width: 100%;
     }
 }
@@ -698,6 +729,18 @@ footer {
 
     #landing {
         height: 700px;
+    }
+
+    #comparisonContainer * {
+        font-size: 14px;
+    }
+
+    #sources * {
+        font-size: 8px;
+    }
+
+    #sources {
+        line-height: 8px;   
     }
 }
 
