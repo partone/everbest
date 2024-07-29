@@ -74,7 +74,7 @@ sup {
     padding-right: 15%;
 }
 
-#explanation {
+#offering {
     display: none !important;
 }
 
@@ -534,6 +534,10 @@ footer {
 
 #besucherzaehler2 {
     display: none;
+}
+
+#fu {
+    color: white;
 }
 
 @media only screen and (max-width: 1200px) {
