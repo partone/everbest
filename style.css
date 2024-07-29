@@ -13,7 +13,6 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-width: fit-content;
 }
 
 a {
@@ -606,6 +605,8 @@ footer {
 
     .iconPair {
         width: 150px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #comparisonContainer * {
@@ -697,5 +698,38 @@ footer {
 
     #landing {
         height: 700px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #landingHeading {
+        line-height: 70px;
+        font-size: 75px;
+    }
+
+    #landingDescription {
+        font-size: 24px;
+    }
+
+    #landing {
+        height: 650px;
+    }
+
+    .head {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #clincher {
+        overflow: hidden;
+    }
+
+    #clincherImage {
+        height: auto;
+        width: 100%;
+    }
+
+    #clincherImage img {
+        width: auto;
     }
 }
