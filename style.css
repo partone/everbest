@@ -72,6 +72,9 @@ sup {
 .section {
     padding-left: 15%;
     padding-right: 15%;
+}
+
+#explanation, #offering, #clincher {
     display: none !important;
 }
 
