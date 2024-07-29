@@ -72,6 +72,7 @@ sup {
 .section {
     padding-left: 15%;
     padding-right: 15%;
+    display: none !important;
 }
 
 .sectionLeftPadOnly {
@@ -530,10 +531,6 @@ footer {
 
 #besucherzaehler2 {
     display: none;
-}
-
-table {
-    display: none !important;
 }
 
 @media only screen and (max-width: 1200px) {
