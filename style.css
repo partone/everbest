@@ -672,6 +672,10 @@ footer {
     #explanationSubHeading {
         width: 90%;
     }
+
+    #sources {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -702,10 +706,6 @@ footer {
 
     #comparisonContainer * {
         font-size: 16px;
-    }
-
-    #sources {
-        width: 100%;
     }
 }
 
